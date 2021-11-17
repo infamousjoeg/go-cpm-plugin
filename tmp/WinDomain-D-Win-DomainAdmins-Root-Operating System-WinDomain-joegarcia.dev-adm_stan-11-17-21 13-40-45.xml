@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<settings>
+
+  <location>
+    <safename>D-Win-DomainAdmins</safename>
+    <foldername>Root</foldername>
+    <objectname>Operating System-WinDomain-joegarcia.dev-adm_stan</objectname>
+  </location>
+
+  <policy>
+    <changepasstimeout>30</changepasstimeout>
+  </policy>
+
+  <properties>
+    <ManagementType>Password</ManagementType>
+    <LogonDomain>JOEGARCIA</LogonDomain>
+    <DeviceType>Operating System</DeviceType>
+    <PolicyID>WinDomain</PolicyID>
+    <Address>10.0.4.48</Address>
+    <UserName>adm_stan</UserName>
+    <CreationMethod>PVWA</CreationMethod>
+    <LastSuccessVerification>1636740537</LastSuccessVerification>
+    <SequenceID>10</SequenceID>
+    <LastSuccessChange>1637174287</LastSuccessChange>
+    <RetriesCount>-1</RetriesCount>
+    <ResetImmediately>VerifyTask</ResetImmediately>
+  </properties>
+
+  <extrapass>
+    <extrapass3>
+      <location>
+        <safename>D-Win-DomainAdmins</safename>
+        <foldername>Root</foldername>
+        <objectname>cyberark-reconcile-windows</objectname>
+      </location>
+      <properties>
+        <ManagementType>Password</ManagementType>
+        <UserName>Svc_CyberArkRecon</UserName>
+        <PolicyID>WinDomain</PolicyID>
+        <CreationMethod>PVWA</CreationMethod>
+        <LogonDomain>JOEGARCIA</LogonDomain>
+        <Address>10.0.4.48</Address>
+        <DeviceType>Operating System</DeviceType>
+        <LastSuccessVerification>1616781454</LastSuccessVerification>
+        <RetriesCount>-1</RetriesCount>
+        <CPMStatus>success</CPMStatus>
+        <LastTask>VerifyTask</LastTask>
+        <SequenceID>8</SequenceID>
+        <LastSuccessChange>1616695052</LastSuccessChange>
+        <CPMDisabled>PCloud</CPMDisabled>
+      </properties>
+    </extrapass3>
+  </extrapass>
+
+</settings>
